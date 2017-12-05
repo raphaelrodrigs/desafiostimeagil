@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="pt">
+
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Desafios de um time ágil em uma organização em transformação</title>
+
+		<meta name="description" content="Desafios de um time ágil em uma organização em transformação">
+		<meta name="author" content="Raphael Rodrigues">
+		
+		
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/day.css" id="theme">
+
+        <!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <section data-background-color="#0c3a77">
+                    <h2 style="color:#fff">Desafios de um time ágil em uma organização em transformação ágil</h2>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="mailto:raphael.silva@softdesign.com.br">Raphael Rodrigues</a>
+				</section>
+
+                <section>
+                    <section>
+                        <h2>Contexto</h2>
+                    </section>
+                    <section>
+                        Um time de desenvolvimento com cultura de práticas ágeis<br><br>
+                        Um Scrum Master, com DNA Ágil, iniciando na organização<br><br>
+                        Um grande instituição financeira em transformação ágil
+                    </section>
+                    <section>
+                        <b>Projeto:</b> Criar uma lista de trabalho multidomínio para substituir a worklist utilizada<br><br>
+                        <b>Stakeholders:</b><br>
+                        Infraestrutura - Patrocinador<br>
+                        Arquitetura Corporativa<br>
+                        Analistas de Negócio<br>
+                        Usuários finais
+                    </section>
+                </section>
+
+                <section>     
+                    <section data-background-color="#037b1d"> 
+                        <h1 style="color:#fff">Início do Projeto</h1>
+                    </section>            
+                    <section>
+                        <img src="img/inicio.png" border=1>
+                        <aside class="notes">
+                        Projeto iniciou com o propósito de POC visando avaliar se o projeto era viável, com restrição de Custo e Prazo. Após as POCs, foi criado um backlog de funcionalidades. Definido pelo time de desenvolvimento e um arquiteto de soluções corporativa.                        
+                        </aside>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <img src="img/arquiteto.png">
+                        <aside class="notes">
+                            Logo já tivemos bastante dificuldade de adaptação, pois antes de tomar qualquer decisão de comportamento ou técnica precisavamos reportar para o Arquiteto. Como as decisões não eram discutidas, muitas vezes faziamos as tarefas, só porque o Arquiteto havia definido.
+                        
+                            Este Arquiteto era o responsável pelas decisões técnicas e também por decidir como iria ser o comportamento das telas.
+                            Junto com o Time, tinha iniciado um Scrum Master na empresa, como ele tinha a visão de uma empresa em Transformação, não conhecia a "política" da organização. Como a parte técnica o Arquiteto definia, ele apoiou o time a reduzir a necessidade de criar vários artefatos.
+
+                            Eu era o QA do time, quando eu e o PO. Fomos descrever as US e os Critérios de Aceite. Nos informaram que deveriamos usar as ferramentas que a empresa tinha comprado. Eram ferramentas bem complexas, com muitos passos, tendo a necessidade de criar vários artefatos, para serem perenes e outros para as sprints. No meu caso, foi dito para fazer Casos de Testes. Já tive que negociar, como fazer as especificações para os testes.
+                        </aside>
+                    </section>
+                    <section>
+                        <img src="img/sprintCycle.gif">
+                    </section>
+                </section>
+                   
+                <section>
+                    <section>
+                        <h3>Evolução Backlog</h3>
+                        <img src="img/backlog 1.png">
+                        <aside class="notes">
+                            Superado essas dificuldades, com o desenvolvimento das POC a partir da Sprint 4. Começou outro problema, alterar o backlog. Como o escopo estava definido, mas com as dúvidas que iriam surgindo tivemos que começar a gerar um backlog de funcionalidade que não haviam sido mapeadas.
+                        Nas Sprints Review o Scrum Master apresentava a evolução do backlog, para todos terem visibilidade do que estava sendo feito
+
+                        Neste momento, começou a surgir uma pressão interna dos patrocinadores, para manter o primeiro backlog. E executar o escopo que estava planejado. Ou seja, executar um projeto com vies tradicional.
+                        </aside>
+                    </section>
+                    <section data-background="img/wrong.gif" data-background-size="80%">
+                        <aside class="notes">
+                            Quando chegou na 6 Sprint, já tinhamos algumas funcionalidades "Prontas". Como os ambientes eram muito complexos, só tinhamos um ambiente de DEV. Ou seja, precisavamos validar em um ambiente com mais massa de dados, neste caso seria um ambiente de Homologação. 
+                           Neste periodo o arquiteto deixou o projeto para iniciar outro. Ou seja, o time passou a ter que conversar com os Stakeholders. Logo descobrimos que havia alguns furos de padrão nos projetos, lembrando que quem decidia isso era o Arquiteto, mas descobrimos que ele não falava muito com a Infraestrutura...
+                        </aside>
+                    </section>
+                    <section>
+                        <h3>Evolução Backlog</h3>
+                        <img src="img/backlog 2.png">
+                        <aside class="notes">
+                            Depois que arrumamos os projetos, versões... descobrimos que deveriamos fazer alguns Planos de Instalação para a Gestão de Mudanças, avaliar os Planos Liberação para ai sim fazer as instalações. Só que estes planos demoravam para serem executados, pois necessitavam de aprovação de uma pessoa.
+                            
+                        </aside>
+                    </section>
+                    <section>
+                        <h3>Evolução Backlog</h3>
+                        <img src="img/backlog 3.png">
+                        <aside class="notes">
+                            Depois que arrumamos os projetos, versões... descobrimos que deveriamos fazer alguns Planos de Instalação para a Gestão de Mudanças, avaliar os Planos Liberação para ai sim fazer as instalações. Só que estes planos demoravam para serem executados, pois necessitavam de aprovação de uma pessoa.                            
+                        </aside>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Time Scrum</h2>
+                        <img src="img/agileteam.jpg">
+                        <aside class="notes">
+                            Com a renovação do contrato, e a aplicação no ambiente de Homologação e evoluindo em Produção, começamos a ter contato com os usuários finais. Com os usuários dando feedbacks começamos a fazer uma aplicação mais assertiva, pois refinamos muitos itens, mas ainda aumentou o backlog.
+                            Porém também tivemos que reduzir nosso ciclo de desenvolvimento, e efetuar entregas mais rápidas
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Feedbacks</h2>
+                        <img src="img/feedback.gif">
+                        <aside class="notes">
+                            Com a renovação do contrato, e a aplicação no ambiente de Homologação e evoluindo em Produção, começamos a ter contato com os usuários finais. Com os usuários dando feedbacks começamos a fazer uma aplicação mais assertiva, pois refinamos muitos itens, mas ainda aumentou o backlog.
+                            Porém também tivemos que reduzir nosso ciclo de desenvolvimento, e efetuar entregas mais rápidas
+                        </aside>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Evolução Backlog</h3>
+                        <img src="img/backlog 4.png">
+                        <aside class="notes">
+                            Mas ainda tinhamos um gargalo. Sempre que precisavamos subir alguma funcionalidade para Homologação, tinhamos que separar um dia para preparar os Planos de Instalação e esperar algum ou alguns dias para a Gestão de Mudanças para aprovar os planos.   
+                            Ainda tinhamos o gargalo de instalação em Homologação, como o time estava mais integrado com o Stakeholders, conseguimos instalar um novo ambiente de Tip, que não precisava de aprovação. Reduzindo o Cicle Time.
+                        </aside>
+                    </section>
+                    <section>
+                        <h3>Evolução Backlog</h3>
+                        <img src="img/backlog 4.png">
+                        <aside class="notes">
+                             Reduzindo o ciclo de desenvolvimento, aumentamos ainda mais a vazão. Mas ainda encontravamos bug somente no ambiente de Homologação. Conseguimos junto com os Stakeholders que as RDM fossem automatizadas, sem a necessidade de uma aprovação
+                        </aside>
+                    </section>
+                </section>
+
+                <section>
+                	<section data-background-color="#670952">
+                        <h1 style="color:#fff">Lições Aprendidas</h1>
+                	</section>
+                    <section>
+                        <h2>Lições Aprendidas</h2>
+                        <br>
+                        Desenvolvimento Ágil = Cultura + Práticas + Ferramentas
+                    </section>
+                    <section>
+                    <table style="font-size:xx-large" >
+                        <tbody>
+                                <tr style="font-weight:bold">
+                                    <td>Positivo</td>
+                                    <td>Melhorar</td>
+                                </tr>
+                                <tr>
+                                    <td>Leadtime 42 > 24 > 7 dias</td>
+                                    <td>Precisava de um PO</td>
+                                </tr>
+                                <tr>
+                                    <td>Estavamos maduros com o processso de build</td>
+                                    <td>Falta de ferramentas de integração contínua</td>
+                                </tr>
+                                <tr>
+                                    <td>Contado com usuários finais</td>
+                                    <td>Lidar com ego</td>
+                                </tr>
+                                <tr>
+                                    <td>Credibilidade com os patrocinadores</td>
+                                    <td>Escalar Feedbacks</td>
+                                </tr>
+                                <tr>
+                                    <td>Controle do ciclo de desenvolvimento</td>
+                                    <td>Falhavamos nas Dailies</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                         <aside class="notes">
+                            Baixamos o leadtime para 24 dias. E no final do projeto passou a ser 7 dias. Lembrando que no inicio foi de 42.
+                            Estavamos mais maduros
+                            Já estavamos mais calejados com algumas pessoas, adiantamos os problemas
+                            Já tinhamos mais credibilidade entre os patrocinadores
+                            Tinhamos controle do tempo ciclo de desenvolvimento, da capacidade do time
+                            Ambiente de Dev, Teste e Homologação
+                            Gerar uma versão em um ambiente de Homologação, sem aprovação, tempo médio de 1 hora
+                            Sem agilidade de guerrilha
+                            Time com o apoio da infra para as entregas
+                            Os patrocinadores devem aprender a falhar
+                            Usuário final enviando feedback de sugestões, criticas e elogios
+                        </aside>
+                    </section>   
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Dúvidas?</h2>
+                        <img class="revealCustom" src="http://g-design.storage.googleapis.com/production/v5/assets/g-dots.gif">
+                    </section>
+                    <section>
+                        <h2>Obrigado!</h2>
+                        <br><br>
+                        <a href="mailto:raphael.silva@softdesign.com.br">Raphael Rodrigues</a>
+                    </section>
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true,
+
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+
+	</body>
+</html>

@@ -1,0 +1,1 @@
+Apresentação SoftDrops para SoftDesign sobre minhas experiências com testes mobile.
