@@ -76,18 +76,25 @@
 
                 <section>
                     <section>
-                        <img src="img/arquiteto.png">
+                        <img src="img/sprintCycle.gif">
                         <aside class="notes">
                             Logo já tivemos bastante dificuldade de adaptação, pois antes de tomar qualquer decisão de comportamento ou técnica precisavamos reportar para o Arquiteto. Como as decisões não eram discutidas, muitas vezes faziamos as tarefas, só porque o Arquiteto havia definido.
-                        
-                            Este Arquiteto era o responsável pelas decisões técnicas e também por decidir como iria ser o comportamento das telas.
-                            Junto com o Time, tinha iniciado um Scrum Master na empresa, como ele tinha a visão de uma empresa em Transformação, não conhecia a "política" da organização. Como a parte técnica o Arquiteto definia, ele apoiou o time a reduzir a necessidade de criar vários artefatos.
-
-                            Eu era o QA do time, quando eu e o PO. Fomos descrever as US e os Critérios de Aceite. Nos informaram que deveriamos usar as ferramentas que a empresa tinha comprado. Eram ferramentas bem complexas, com muitos passos, tendo a necessidade de criar vários artefatos, para serem perenes e outros para as sprints. No meu caso, foi dito para fazer Casos de Testes. Já tive que negociar, como fazer as especificações para os testes.
                         </aside>
                     </section>
                     <section>
-                        <img src="img/sprintCycle.gif">
+                        <img src="img/arquiteto.png">
+                        <aside class="notes">                       
+                            Este Arquiteto era o responsável pelas decisões técnicas e também por decidir como iria ser o comportamento das telas.
+                            Junto com o Time, tinha iniciado um Scrum Master na empresa, como ele tinha a visão de uma empresa em Transformação, não conhecia a "política" da organização. Como a parte técnica o Arquiteto definia, ele apoiou o time a reduzir a necessidade de criar vários artefatos.
+                        </aside>
+                    </section>
+                    <section>
+                        <img src="img/scrumMaster.png">
+                        <aside class="notes">
+                            Superado essas dificuldades, com o desenvolvimento das POC a partir da Sprint 4. Começou outro problema, alterar o backlog. Como o escopo estava definido, mas com as dúvidas que iriam surgindo tivemos que começar a gerar um backlog de funcionalidade que não haviam sido mapeadas.
+                            
+                            Nas Sprints Review o Scrum Master dava apresentava a evolução do backlog, para todos terem VISIBILIDADE do que estava sendo feito. Neste momento, começou a surgir uma pressão interna dos patrocinadores, para manter o primeiro backlog. E executar o escopo que estava planejado. Ou seja, executar um projeto com vies tradicional.
+                        </aside>
                     </section>
                 </section>
                    
@@ -96,31 +103,29 @@
                         <h3>Evolução Backlog</h3>
                         <img src="img/backlog 1.png">
                         <aside class="notes">
-                            Superado essas dificuldades, com o desenvolvimento das POC a partir da Sprint 4. Começou outro problema, alterar o backlog. Como o escopo estava definido, mas com as dúvidas que iriam surgindo tivemos que começar a gerar um backlog de funcionalidade que não haviam sido mapeadas.
-                        Nas Sprints Review o Scrum Master apresentava a evolução do backlog, para todos terem visibilidade do que estava sendo feito
+                            Quando chegou na 6 Sprint, já tinhamos algumas funcionalidades "Prontas". Como os ambientes eram muito complexos, só tinhamos um ambiente de DEV. Ou seja, precisavamos validar em um ambiente com mais massa de dados, neste caso seria um ambiente de Homologação. 
 
-                        Neste momento, começou a surgir uma pressão interna dos patrocinadores, para manter o primeiro backlog. E executar o escopo que estava planejado. Ou seja, executar um projeto com vies tradicional.
+                            Neste periodo o arquiteto deixou o projeto para iniciar outro. Ou seja, o time passou a ter que conversar com os Stakeholders. 
+
+                            Logo descobrimos que havia alguns furos de padrão nos projetos, lembrando que quem decidia isso era o Arquiteto, mas descobrimos que ele não falava muito com a Infraestrutura...
                         </aside>
                     </section>
                     <section data-background="img/wrong.gif" data-background-size="80%">
-                        <aside class="notes">
-                            Quando chegou na 6 Sprint, já tinhamos algumas funcionalidades "Prontas". Como os ambientes eram muito complexos, só tinhamos um ambiente de DEV. Ou seja, precisavamos validar em um ambiente com mais massa de dados, neste caso seria um ambiente de Homologação. 
-                           Neste periodo o arquiteto deixou o projeto para iniciar outro. Ou seja, o time passou a ter que conversar com os Stakeholders. Logo descobrimos que havia alguns furos de padrão nos projetos, lembrando que quem decidia isso era o Arquiteto, mas descobrimos que ele não falava muito com a Infraestrutura...
-                        </aside>
                     </section>
                     <section>
                         <h3>Evolução Backlog</h3>
                         <img src="img/backlog 2.png">
                         <aside class="notes">
+                            Quando fomos arrumar os projetos (padrão de nomenclatura de serviço estava errado), vimos que algumas versões que estavamos usando não tinha no ambiente de homologação. Só que quem fazia a instalação dos componentes era a Infraestrutura, para eles fazerem uma instalação, era necessário fazer uma Requisição... só que nossas requisições entrevam com baixa prioridade, pois somente as de Produção tinham prioridade alta.
+
                             Depois que arrumamos os projetos, versões... descobrimos que deveriamos fazer alguns Planos de Instalação para a Gestão de Mudanças, avaliar os Planos Liberação para ai sim fazer as instalações. Só que estes planos demoravam para serem executados, pois necessitavam de aprovação de uma pessoa.
-                            
                         </aside>
                     </section>
                     <section>
                         <h3>Evolução Backlog</h3>
                         <img src="img/backlog 3.png">
                         <aside class="notes">
-                            Depois que arrumamos os projetos, versões... descobrimos que deveriamos fazer alguns Planos de Instalação para a Gestão de Mudanças, avaliar os Planos Liberação para ai sim fazer as instalações. Só que estes planos demoravam para serem executados, pois necessitavam de aprovação de uma pessoa.                            
+                            Ficamos 42 dias para subir os itens para Homologação. Nosso Leadtime estava extremamente alto. De Homologação para o ambiente de Produção, mais 28 dias.
                         </aside>
                     </section>
                 </section>
@@ -138,8 +143,7 @@
                         <h2>Feedbacks</h2>
                         <img src="img/feedback.gif">
                         <aside class="notes">
-                            Com a renovação do contrato, e a aplicação no ambiente de Homologação e evoluindo em Produção, começamos a ter contato com os usuários finais. Com os usuários dando feedbacks começamos a fazer uma aplicação mais assertiva, pois refinamos muitos itens, mas ainda aumentou o backlog.
-                            Porém também tivemos que reduzir nosso ciclo de desenvolvimento, e efetuar entregas mais rápidas
+                            Colocamos na aplicação, um ícone de envio de feedbacks... Esses feedbacks caiam direto na nossa caixa de e-mail. Filtravamos esses feedbacks em Bugs e melhorias, quando tínhamos alguma dúvida ou para melhor entendimento entravamos em contato com o usuário.
                         </aside>
                     </section>
                 </section>
@@ -155,7 +159,7 @@
                     </section>
                     <section>
                         <h3>Evolução Backlog</h3>
-                        <img src="img/backlog 4.png">
+                        <img src="img/backlog 5.png">
                         <aside class="notes">
                              Reduzindo o ciclo de desenvolvimento, aumentamos ainda mais a vazão. Mas ainda encontravamos bug somente no ambiente de Homologação. Conseguimos junto com os Stakeholders que as RDM fossem automatizadas, sem a necessidade de uma aprovação
                         </aside>
